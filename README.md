@@ -49,6 +49,8 @@ To develop a Recurrent Neural Network model for stock price prediction.
 <img src="https://github.com/Kaushika-Anandh/rnn-stock-price-prediction/blob/main/3.jpg" width="650" height="350">
 </p>
 
+<br>
+
 ## DESIGN STEPS
 
 - **Step 1:** Import the required packages
