@@ -94,6 +94,7 @@ training_set_scaled = sc.fit_transform(train_set)
 training_set_scaled.shape
 ```
 
+**training data**
 ```python
 X_train_array = []
 y_train_array = []
@@ -117,6 +118,7 @@ model.summary()
 model.fit(X_train1,y_train,epochs=20, batch_size=32)
 ```
 
+**test data**
 ```python
 dataset_test = pd.read_csv('testset.csv')
 test_set = dataset_test.iloc[:,1:2].values
@@ -138,6 +140,7 @@ X_test = np.reshape(X_test,(X_test.shape[0], X_test.shape[1],1))
 X_test.shape
 ```
 
+**prediction plot**
 ```python
 predicted_stock_price_scaled = model.predict(X_test)
 predicted_stock_price = sc.inverse_transform(predicted_stock_price_scaled)
