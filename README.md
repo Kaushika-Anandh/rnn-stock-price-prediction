@@ -142,7 +142,8 @@ X_test.shape
 predicted_stock_price_scaled = model.predict(X_test)
 predicted_stock_price = sc.inverse_transform(predicted_stock_price_scaled)
 plt.plot(np.arange(0,1384),inputs, color='purple', label = 'Test data')
-plt.plot(np.arange(60,1384),predicted_stock_price, color='skyblue', label = 'Predicted stock price')
+plt.plot(np.arange(60,1384),predicted_stock_price, color='skyblue',
+         label = 'Predicted stock price')
 plt.title('Stock Price Prediction')
 plt.xlabel('Time')
 plt.ylabel('Stock Price')
